@@ -14,7 +14,7 @@ class Psts extends React.Component {
     // ComponentDidMount is used to
     // execute the code 
     componentDidMount() {
-        fetch("https://gorest.co.in/public/v2/posts/2034")
+        fetch("https://gorest.co.in/public/v2/posts/1376/comments")
             .then((res) => res.json())
             .then((json) => {
                 this.setState({

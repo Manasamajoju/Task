@@ -14,7 +14,7 @@ class User extends React.Component {
     // ComponentDidMount is used to
     // execute the code 
     componentDidMount() {
-        fetch("https://gorest.co.in/public/v2/users")
+        fetch("https://gorest.co.in/public/v2/posts/1460")
             .then((res) => res.json())
             .then((json) => {
                 this.setState({
