@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import Userdetail1 from './Table/Userdetail1';
 import Userdetail2 from './Table/Userdetail2';
@@ -16,7 +17,19 @@ import Post from './Container/Post';
 import Psts from './Container/Psts';
 
 const Route = require("react-router-dom").Route;
+=======
+import User from "./Container/User";
+import Theme from "./Table/Theme";
+import Post from "./Container/Post";
+import Post1 from "./Components/Post1";
+import Post2 from "./Components/Post2";
+import Post3 from "./Components/Post3";
+import Post4 from "./Components/Post4";
 
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
+>>>>>>> 8a4df8496d128f289541455dfbde9b927cdc3f77
+
+const Route = require("react-router-dom").Route;
 function App() {
 
   const myStyle={
@@ -31,6 +44,7 @@ function App() {
 };
   return (
     <div className="App">
+<<<<<<< HEAD
     <div style={myStyle}>
     <Router>
       <Routes>
@@ -51,6 +65,26 @@ function App() {
 
       </Routes>
     </Router>
+=======
+      <Router>
+
+           <Routes>
+             <Route path="Theme" element={ <Theme />} />
+
+             <Route path="User" element={ <User />} />
+
+             <Route path="Post" element={ <Post />} />
+             <Route path="Post1" element={ <Post1/>} />
+             <Route path="Post2" element={ <Post2 />} />
+             <Route path="Post3" element={ <Post3 />} />
+             <Route path="Post4" element={ <Post4 />} />
+
+            </Routes>
+
+      </Router>
+
+       
+>>>>>>> 8a4df8496d128f289541455dfbde9b927cdc3f77
     </div>
   </div>
     

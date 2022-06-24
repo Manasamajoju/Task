@@ -7,7 +7,7 @@ class User extends React.Component {
    
         this.state = {
             items: [],
-            DataisLoaded: false
+            DataisLoaded: true
         };
     }
    
@@ -33,12 +33,15 @@ class User extends React.Component {
            {
               items.map((item) => ( 
               <ol key = { item.id } >
-                  User_Name: { item.username }, 
-                  Full_Name: { item.name }, 
-                  User_Email: { item.email } 
+                  id: { item.id }, 
+                  Name: { item.name }, 
+                  Email: { item.email },
+                  Gender: {item.gender},
+                  Status: {item.status}
                   </ol>
               ))
           }
+
       </div>
   );
 }

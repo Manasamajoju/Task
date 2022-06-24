@@ -30,12 +30,12 @@ class Post extends React.Component {
  
       return (
       <div className = "post">
-          <h1> Fetch data from an api in react </h1>  {
+         {
               items.map((item) => ( 
               <ol key = { item.id } >
-                  User_Name: { item.username }, 
-                  Full_Name: { item.name }, 
-                  User_Email: { item.email } 
+                 User_Id: { item.user_id}, 
+                  Title: { item.title }, 
+                  Body: { item.body } 
                   </ol>
               ))
           }
